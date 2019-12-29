@@ -17,7 +17,7 @@ class ControladorCliente extends BaseController
     	$clientes = cliente::all();
     	return response()->json($clientes, 200);
     }
-
+    //hola
     public function getCliente(Request $request, $cedula){
 
     	if ($request->isjson()) {
